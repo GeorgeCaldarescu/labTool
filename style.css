@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+nav{
+    position: sticky;
+    top: 0;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.2);
+    width: auto;
+}
+
+nav ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+}
+
+a:hover{
+    background-color:rgb(95, 131, 95);
+    color:white;
+    border-radius: 3px;
+    transform: scale(.6);
+}
+
+#agro{
+    margin: 10px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+.agroTitle{
+    /* background-color: blueviolet; */
+    width:fit-content;
+    padding: 20px;
+    margin: 30px;
+    align-items: center;
+}
+ 
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}   
+
+input{
+    width: 500px;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+button{
+    width: auto;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 0 5px 5px;
+    border: 2px solid black;
+}
+
+button:hover{
+    background-color:rgb(95, 131, 95);
+    color:white;
+}
+
+#bradford{
+    height: 100vh;
+    margin: 10px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bradfordTitle{
+    /* background-color: blueviolet; */
+    width:fit-content;
+    padding: 20px;
+    margin: 50px;
+    align-items: center;
+}
+
+
+
+
+
