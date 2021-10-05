@@ -90,6 +90,10 @@ button:hover{
     color:white;
 }
 
+h3{
+    margin-top: 20px;
+}
+
 #bradford{
     height: 100vh;
     margin: 10px;
