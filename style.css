@@ -75,13 +75,14 @@ input{
     border-radius: 5px;
 }
 
-button{
+#btnAgro{
     width: auto;
     padding: 20px;
     font-weight: bold;
     font-size: 18px;
     border-radius: 0 0 5px 5px;
     border: 2px solid black;
+    cursor: pointer;
 }
 
 button:hover{
@@ -106,7 +107,15 @@ button:hover{
     align-items: center;
 }
 
-
+#btnBradford{
+    width: auto;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 0 5px 5px;
+    border: 2px solid black;
+    cursor: pointer;
+}
 
 
 
