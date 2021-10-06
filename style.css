@@ -5,22 +5,35 @@
   }
 
 nav{
-    position: sticky;
+    /* position: sticky;
     top: 0;
     height: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    width: 100%; */
     box-shadow:0 5px 15px rgba(0, 0, 0, 0.2);
-    width: 100%;
+    min-height: 10vh;
+    padding: 2rem;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 nav ul{
-    display: flex;
+    /* display: flex;
     width: 100%;
     justify-content: space-around;
     list-style: none;
+    align-items: center; */
+    display: flex;
+    justify-content: space-around;
     align-items: center;
+    list-style: none;
+    flex: 1 1 40rem;
+    
 }
 
 a{
@@ -43,7 +56,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    min-height: 90vh;
 }
 
 
@@ -95,7 +108,7 @@ h3{
 }
 
 #bradford{
-    height: 100vh;
+    min-height: 90vh;
     margin: 10px;
     padding: 50px;
     display: flex;
@@ -123,18 +136,70 @@ h3{
 
 
 /* MOBILE SECTION */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2){
-   
-   input{
-    width: 50%;
-   }
+
+@media screen and (max-width: 933px){
+    nav{
+        text-align: center;
+        overflow: hidden
+    }
+
+    #agro{
+        padding: 10px;
+        min-height: 60vh;
+    }
+    .agroTitle{
+        padding: 10px;
+        margin: 10px;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 18px;
+    }
     
+    input{
+        width: 200px;
+    }
+
+    #btnAgro{
+        width: auto;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    h3{
+        text-align: center;
+    }
+    
+    #btnBradford{
+        width: auto;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 18px;  
+    }
+    #bradford{
+        padding: 10px;
+        min-height: auto;
+    }
+    .bradfordTitle{
+        padding: 10px;
+        margin: 10px;
+    }
 }
 
-@media only screen 
+/* @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 620px){
+   
+   nav{
+       width: auto;
+       flex-direction: column;
+   }
+    
+} */
+
+/* @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2){
@@ -223,4 +288,4 @@ h3{
         width: 100%;
     }
   }  
-
+ */
