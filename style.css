@@ -5,14 +5,6 @@
   }
 
 nav{
-    /* position: sticky;
-    top: 0;
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-    width: 100%; */
     box-shadow:0 5px 15px rgba(0, 0, 0, 0.2);
     min-height: 10vh;
     padding: 2rem;
@@ -23,11 +15,6 @@ nav{
 }
 
 nav ul{
-    /* display: flex;
-    width: 100%;
-    justify-content: space-around;
-    list-style: none;
-    align-items: center; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -56,13 +43,12 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 90vh;
+    min-height: 70vh;
 }
 
 
 
 .agroTitle{
-    /* background-color: blueviolet; */
     width:fit-content;
     padding: 20px;
     margin: 30px;
@@ -108,7 +94,7 @@ h3{
 }
 
 #bradford{
-    min-height: 90vh;
+    min-height: 70vh;
     margin: 10px;
     padding: 50px;
     display: flex;
@@ -117,7 +103,6 @@ h3{
 }
 
 .bradfordTitle{
-    /* background-color: blueviolet; */
     width:fit-content;
     padding: 20px;
     margin: 50px;
@@ -187,105 +172,3 @@ h3{
         margin: 10px;
     }
 }
-
-/* @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 620px){
-   
-   nav{
-       width: auto;
-       flex-direction: column;
-   }
-    
-} */
-
-/* @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2){
-    
-    nav{
-        width: 100%;
-    }
-  }
-
-  @media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3){
-     
-    nav{
-        width: 100%;
-    }
-  }
-
-  @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3){
-
-    nav{
-        width: 100%;
-    }
-  }
-
-  @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1){
-     
-    nav{
-        width: 100%;
-    }
-  }
-
-  @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 2){
-    
-    nav{
-        width: 100%;
-    }
-  }
-  
-  @media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 1112px)
-  and (-webkit-min-device-pixel-ratio: 2){
-     
-    nav{
-        width: 100%;
-    }
-  }
-
-  @media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2){
-
-    nav{
-        width: 100%;
-    }
-  }
-
-  @media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1){
-     
-    nav{
-        width: 100%;
-    }
-  }
-  @media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi){
-
-    nav{
-        width: 100%;
-    }
-  }  
- */
