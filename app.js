@@ -38,15 +38,14 @@ bradfordCalc.addEventListener("submit", function () {
     "ul of SDS";
 });
 
-
 cellsCalc.addEventListener("submit", function () {
   event.preventDefault();
   var od = document.getElementById("odCells").value;
-  var a = (od * 10);
-  var b = 
+  var a = od * 10;
+  var b = (a * (8 * 10 ** 8) * 20) / (3 * 10 ** 10);
   let str = "Result: ";
-  str += " ";
+  str += "Add ";
   str += b;
-  str += "ul to 2ml of infiltration buffer";
-  resultAgro.textContent = str;
+  str += "ml to your cells";
+  resultCells.textContent = str;
 });
