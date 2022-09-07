@@ -1,174 +1,200 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-nav{
-    box-shadow:0 5px 15px rgba(0, 0, 0, 0.2);
-    min-height: 10vh;
-    padding: 2rem;
-    display: flex;
-    margin: auto;
-    align-items: center;
-    flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav ul{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    flex: 1 1 40rem;
-    
+nav {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  min-height: 10vh;
+  padding: 2rem;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+  top: 0px;
+  position: sticky;
 }
 
-a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding: 10px;
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  flex: 1 1 40rem;
 }
 
-a:hover{
-    background-color:rgb(95, 131, 95);
-    color:white;
-    border-radius: 3px;
-    transform: scale(.6);
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
 }
 
-#agro{
+a:hover {
+  background-color: rgb(95, 131, 95);
+  color: white;
+  border-radius: 3px;
+  transform: scale(0.6);
+}
+
+#agro,
+#bradford,
+#cells {
+  margin: 10px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.agroTitle,
+.bradfordTitle,
+.cellsTitle {
+  width: fit-content;
+  padding: 20px;
+  margin: 30px;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+input {
+  width: 500px;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+#btnAgro,
+#btnBradford,
+#btnCells {
+  width: auto;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 0 5px 5px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(95, 131, 95);
+  color: white;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+p {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+/* #bradford{
+    min-height: 70vh;
     margin: 10px;
     padding: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 70vh;
-}
+} */
 
-
-
-.agroTitle{
-    width:fit-content;
-    padding: 20px;
-    margin: 30px;
-    align-items: center;
-}
- 
-form{
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    box-shadow:0 5px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-}   
-
-input{
-    width: 500px;
-    padding: 10px;
-    margin: 10px;
-    font-weight: bold;
-    text-align: center;
-    color: black;
-    border: 2px solid black;
-    border-radius: 5px;
-}
-
-#btnAgro{
-    width: auto;
-    padding: 20px;
-    font-weight: bold;
-    font-size: 18px;
-    border-radius: 0 0 5px 5px;
-    border: 2px solid black;
-    cursor: pointer;
-}
-
-button:hover{
-    background-color:rgb(95, 131, 95);
-    color:white;
-}
-
-h3{
-    margin-top: 20px;
-}
-
-#bradford{
-    min-height: 70vh;
-    margin: 10px;
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.bradfordTitle{
+/* .bradfordTitle{
     width:fit-content;
     padding: 20px;
     margin: 50px;
     align-items: center;
-}
+} */
 
-#btnBradford{
-    width: auto;
-    padding: 20px;
-    font-weight: bold;
-    font-size: 18px;
-    border-radius: 0 0 5px 5px;
-    border: 2px solid black;
-    cursor: pointer;
-}
-
+/* #btnBradford {
+  width: auto;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 0 5px 5px;
+  border: 2px solid black;
+  cursor: pointer;
+} */
 
 /* MOBILE SECTION */
 
-@media screen and (max-width: 933px){
-    nav{
-        text-align: center;
-        overflow: hidden
-    }
+@media screen and (max-width: 933px) {
+  nav {
+    text-align: center;
+    /* overflow: hidden; */
+    top: 0px;
+  }
 
-    #agro{
-        padding: 10px;
-        min-height: 60vh;
-    }
-    .agroTitle{
-        padding: 10px;
-        margin: 10px;
-    }
+  #agro,
+  #bradford,
+  #cells {
+    padding: 10px;
+    /* min-height: auto; */
+  }
+  .agroTitle,
+  .bradfordTitle,
+  .cellsTitle {
+    padding: 10px;
+    margin: 10px;
+    margin-top: 5em;
+  }
 
-    h2{
-        text-align: center;
-        font-size: 18px;
-    }
-    
-    input{
-        width: 200px;
-    }
+  h2 {
+    text-align: center;
+    font-size: 18px;
+  }
 
-    #btnAgro{
-        width: auto;
-        padding: 10px;
-        font-weight: bold;
-        font-size: 18px;
-    }
+  input {
+    width: 200px;
+  }
 
-    h3{
-        text-align: center;
-    }
-    
-    #btnBradford{
-        width: auto;
-        padding: 10px;
-        font-weight: bold;
-        font-size: 18px;  
-    }
-    #bradford{
-        padding: 10px;
-        min-height: auto;
-    }
-    .bradfordTitle{
-        padding: 10px;
-        margin: 10px;
-    }
+  #btnAgro,
+  #btnBradford,
+  #btnCells {
+    width: auto;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  /* #btnBradford {
+    width: auto;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+  } */
+  /* #bradford {
+    padding: 10px;
+    min-height: auto;
+  } */
+  /* .bradfordTitle {
+    padding: 10px;
+    margin: 10px;
+    margin-top: 5em;
+  } */
+  p {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    font-size: 1em;
+  }
 }

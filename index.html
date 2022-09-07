@@ -1,43 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Lab tools</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <ul class = "nav-links">
-            <li><a href="#agro">Agro</a></li>
-            <li><a href="#bradford">Bradford</a></li>
-        </ul>
+      <ul class="nav-links">
+        <li><a href="#agro">Agro</a></li>
+        <li><a href="#bradford">Bradford</a></li>
+        <li><a href="#cells">Cells diluition</a></li>
+      </ul>
     </nav>
     <div id="agro">
-        <div class="agroTitle">
-            <h2>Quick calculator to find the exact amount of agro to use during transient transformation</h2>
-        </div>
-        <form id="agroCalc" action="#" method="get">
-            <input type="number" step="0.0001" id = "agroConc" placeholder = "Desired agro concentration">
-            <input type="number" step="0.0001" id="odAgro" placeholder="Insert OD">
-            <button class="btn-hero" id="btnAgro">Calculate</button>
-        </form>
-        <h3 id = "resultAgro">Result: </h3>
+      <div class="agroTitle">
+        <h2>
+          Quick calculator to find the exact amount of agro to use during
+          transient transformation
+        </h2>
+      </div>
+      <form id="agroCalc" action="#" method="get">
+        <input
+          type="number"
+          step="0.0001"
+          id="agroConc"
+          placeholder="Desired agro concentration"
+        />
+        <input
+          type="number"
+          step="0.0001"
+          id="odAgro"
+          placeholder="Insert OD"
+        />
+        <button class="btn-hero" id="btnAgro">Calculate</button>
+      </form>
+      <h3 id="resultAgro">Result:</h3>
     </div>
     <div id="bradford">
-        <div class="bradfordTitle">
-            <h2>Bradford protein quantification assay</h2>
-        </div>
-        <form id="bradfordCalc" action="#" method="get">
-            <input type="number" step="0.0001" id = "bradfordConc" placeholder = "Desired protein concentration">
-            <input type="number" step="0.0001" id="odBradford" placeholder="Insert OD">
-            <button type = "submit" class="btn-hero" id="btnBradford">Calculate</button>
-        </form>
-        <h3 id="resultBradford">Result: </h3>
+      <div class="bradfordTitle">
+        <h2>Bradford protein quantification assay</h2>
+      </div>
+      <form id="bradfordCalc" action="#" method="get">
+        <input
+          type="number"
+          step="0.0001"
+          id="bradfordConc"
+          placeholder="Desired protein concentration"
+        />
+        <input
+          type="number"
+          step="0.0001"
+          id="odBradford"
+          placeholder="Insert OD"
+        />
+        <button type="submit" class="btn-hero" id="btnBradford">
+          Calculate
+        </button>
+      </form>
+      <h3 id="resultBradford">Result:</h3>
     </div>
 
-    <script src = "app.js"></script>
-</body>
+    <!--Cells counting tool  -->
+    <!-- <div id="cells">
+      <div class="cellsTitle">
+        <h2>Cells diluition</h2>
+      </div>
+      <div class="cellsText">
+        <p>Pay attention works only with 10x diluition.</p>
+      </div>
+      <form id="cellsCalc" action="#" method="get">
+        <input type="number" step="0.0001" id="odCells" placeholder="OD" />
 
+        <button type="submit" class="btn-hero" id="btnCells">Calculate</button>
+      </form>
+      <h3 id="resultCells">Result:</h3>
+    </div> -->
+
+    <script src="app.js"></script>
+  </body>
 </html>
