@@ -44,8 +44,8 @@ cellsCalc.addEventListener("submit", function () {
   var a = od * 10;
   var b = (a * (8 * 10 ** 8) * 20) / (3 * 10 ** 10);
   let str = "Result: ";
-  str += "Add ";
+  str += "Take ";
   str += b;
-  str += "ml to your cells";
+  str += "ml from your cells";
   resultCells.textContent = str;
 });
