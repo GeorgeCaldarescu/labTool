@@ -1,12 +1,13 @@
-# labTool
+## labTool
 
 Dilution tool v1.0
 How to use the tool:
 when you open it, you can choose between diluite the agro for transient tobacco infiltration typing 1 or for Bradford assay typing 2
 
-BradFord assay
-after you choose Bradford assay will ask you to type the OD (remember you don't need to multiply it by 10) and at the end you will receive the exact amount to obtain respectivetly 150, 100, 50ng and the corresponding amount of SDS Slope equation: we need to update the equation every year, to have precise results.
+# BradFord assay:
+Select the amount of proteins in nanograms (ng), write the OD you measured and you will get the amount in ul to take from your protein stock to get that exact concentration and the amount of SDS to add before loading the SDS-PAGE gel.
 
+Slope equation: we need to update the equation every year, to have precise results.
 in the code you find this equation: od*0.8847 + 0.128 --> y = mx + q 0.8847 is the slope(m), you can calculate that from excell and 0.128 is the interception(q) also this one you can calculate from excell
 
 ------ Update version ------
